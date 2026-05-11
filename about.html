@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О компании АК Гранат — официальный дилер КАМАЗ в Санкт-Петербурге с 1991 года</title>
+  <meta name="description" content="АК Гранат — официальный дилер ПАО КАМАЗ в Санкт-Петербурге с 1991 года. Два аттестованных дилерских центра, статус 3S, лидер СЗФО по реализации техники КАМАЗ К5.">
+  <meta name="keywords" content="АК Гранат о компании, дилер КАМАЗ СПб, КАМАЗ К5 Санкт-Петербург официальный дилер, реквизиты АК Гранат">
+  <link rel="canonical" href="https://kamaz-k5.ru/about">
+  <meta property="og:title" content="О компании | АК Гранат — официальный дилер КАМАЗ с 1991 года">
+  <meta property="og:description" content="Более 30 лет поставляем технику КАМАЗ в СПб и СЗФО. Два дилерских центра, статус 3S, официальный дилерский центр К5.">
+  <meta property="og:url" content="https://kamaz-k5.ru/about">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "ООО «Автомобильная компания «Гранат»",
+    "foundingDate": "1991",
+    "url": "https://kamaz-k5.ru",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Ленина, 2",
+      "addressLocality": "Санкт-Петербург",
+      "postalCode": "196626",
+      "addressCountry": "RU"
+    },
+    "telephone": "+7-812-334-50-10",
+    "email": "kamaz@granat.spb.ru"
+  }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .fade-up { opacity:0; transform:translateY(24px); transition:opacity .6s ease,transform .6s ease; }
+    .fade-up.visible { opacity:1; transform:translateY(0); }
+    .fade-up:nth-child(2){transition-delay:.1s}
+    .fade-up:nth-child(3){transition-delay:.2s}
+    .fade-up:nth-child(4){transition-delay:.3s}
+
+    /* Timeline */
+    .timeline { position:relative; padding-left: 32px; }
+    .timeline::before {
+      content:'';
+      position:absolute; left:0; top:8px; bottom:8px;
+      width:2px; background:var(--clr-border);
+    }
+    .timeline-item { position:relative; margin-bottom:28px; }
+    .timeline-item:last-child { margin-bottom:0; }
+    .timeline-dot {
+      position:absolute; left:-39px; top:4px;
+      width:14px; height:14px;
+      border-radius:50%;
+      background:var(--clr-white);
+      border:2px solid var(--clr-border);
+      transition:border-color var(--trans), background var(--trans);
+    }
+    .timeline-item.highlight .timeline-dot {
+      background:var(--clr-burgundy);
+      border-color:var(--clr-burgundy);
+    }
+    .timeline-year {
+      font-family:var(--ff-head);
+      font-size:.78rem;
+      font-weight:800;
+      color:var(--clr-burgundy);
+      letter-spacing:.04em;
+      margin-bottom:4px;
+    }
+    .timeline-text { font-size:.9rem; color:var(--clr-mid); line-height:1.55; }
+
+    /* Status badges */
+    .status-list { display:flex; flex-direction:column; gap:10px; }
+    .status-item {
+      display:flex; align-items:flex-start; gap:12px;
+      padding:14px 16px;
+      background:var(--clr-white);
+      border:1px solid var(--clr-border);
+      border-left:3px solid var(--clr-burgundy);
+      border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+      font-size:.88rem; color:var(--clr-mid);
+    }
+    .status-item svg { flex-shrink:0; color:var(--clr-burgundy); margin-top:1px; }
+
+    /* Requisites table */
+    .req-table { width:100%; border-collapse:collapse; font-size:.88rem; }
+    .req-table tr { border-bottom:1px solid var(--clr-border); }
+    .req-table tr:last-child { border-bottom:none; }
+    .req-table td { padding:12px 8px; vertical-align:top; }
+    .req-table td:first-child { color:var(--clr-muted); width:40%; white-space:nowrap; }
+    .req-table td:last-child { font-weight:600; color:var(--clr-dark); }
+
+    /* Stats strip */
+    .stats-strip {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:1px;
+      background:var(--clr-border);
+      border:1px solid var(--clr-border);
+      border-radius:var(--radius-md);
+      overflow:hidden;
+      margin-bottom:48px;
+    }
+    .stat-cell {
+      background:var(--clr-white);
+      padding:24px 20px;
+      text-align:center;
+    }
+    .stat-val {
+      font-family:var(--ff-head);
+      font-size:2rem;
+      font-weight:900;
+      color:var(--clr-burgundy);
+      line-height:1;
+      margin-bottom:6px;
+    }
+    .stat-lbl { font-size:.78rem; color:var(--clr-muted); text-transform:uppercase; letter-spacing:.06em; }
+
+    @media(max-width:900px){
+      .stats-strip { grid-template-columns:repeat(2,1fr); }
+    }
+    @media(max-width:600px){
+      .stats-strip { grid-template-columns:1fr; }
+      .resp-grid-1 { grid-template-columns:1fr !important; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+
+  <!-- Page header -->
+  <section class="page-header" aria-label="Заголовок страницы">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a> /
+        <span>О компании</span>
+      </nav>
+      <h1>О компании</h1>
+    </div>
+  </section>
+
+  <!-- Intro + stats -->
+  <section class="section section-alt" aria-labelledby="about-intro">
+    <div class="container">
+
+      <div class="stats-strip fade-up">
+        <div class="stat-cell">
+          <div class="stat-val">1991</div>
+          <div class="stat-lbl">год основания</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-val">30+</div>
+          <div class="stat-lbl">лет на рынке</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-val">2</div>
+          <div class="stat-lbl">дилерских центра</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-val">№1</div>
+          <div class="stat-lbl">дилер КАМАЗ в СЗФО</div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start" class="resp-grid-1">
+        <div>
+          <span class="section-label">Кто мы</span>
+          <h2 id="about-intro" style="margin-top:8px;margin-bottom:20px">Официальный дилер ПАО «КАМАЗ» с 1994 года</h2>
+          <p>ООО «Автомобильная компания «Гранат» основана в 1991 году и является одним из старейших дилеров КАМАЗ в России. В 1994 году был заключён первый в истории дистрибьюторский договор между ПАО «КАМАЗ» и компанией «Гранат».</p>
+          <p>Сегодня мы занимаем лидирующее положение на рынках Северо-Западного региона и Санкт-Петербурга. Компания обладает развитой инфраструктурой и двумя аттестованными дилерскими центрами КАМАЗ, включая официальный дилерский центр поколения К5.</p>
+          <p>Наша миссия — помогать клиентам зарабатывать: через профессиональный подбор техники, оперативный сервис и индивидуальные условия поставки.</p>
+          <p style="margin:0">В 1997, 1999 и 2000 годах компания занимала первое место по объёму реализации автотехники среди региональных дилеров и дистрибьюторов ПАО «КАМАЗ».</p>
+        </div>
+        <div>
+          <img src="https://kamaz-k5.ru/assets/cache_image/res/1/42jzcn-vyi-gotovyi-pereiti-na-novyii-kamaz-k5_1400x400_1be.jpg"
+               alt="Автомобильная компания Гранат — официальный дилер КАМАЗ"
+               style="border-radius:var(--radius-lg);width:100%;object-fit:cover;aspect-ratio:16/9"
+               loading="lazy">
+          <div style="margin-top:16px;background:var(--clr-surface);border-radius:var(--radius-md);padding:16px 18px">
+            <p style="font-size:.85rem;color:var(--clr-mid);margin:0;font-style:italic">«Наша компания помогает клиентам зарабатывать деньги: путём индивидуального и профессионального предложения в выборе автотехники КАМАЗ, запасных частей и оказания сервисных услуг для решения задач вашего бизнеса в максимально короткие сроки.»</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- History timeline -->
+  <section class="section" aria-labelledby="history-title">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start" class="resp-grid-1">
+
+        <div>
+          <span class="section-label">История</span>
+          <h2 id="history-title" style="margin-top:8px;margin-bottom:32px">Хронология развития</h2>
+          <div class="timeline">
+
+            <div class="timeline-item highlight">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">1991</div>
+              <div class="timeline-text">Создание компании «Гранат» в Санкт-Петербурге.</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">1992</div>
+              <div class="timeline-text">Выбор основного направления деятельности — продажа автомобильной техники КАМАЗ.</div>
+            </div>
+
+            <div class="timeline-item highlight">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">1994</div>
+              <div class="timeline-text">Заключён первый дистрибьюторский договор между ПАО «КАМАЗ» и АК «Гранат».</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">1997–2000</div>
+              <div class="timeline-text">Трёхкратное первое место по объёму реализации техники среди региональных дилеров КАМАЗ.</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2010</div>
+              <div class="timeline-text">Получен официальный дилерский статус КАМАЗ (свидетельство №2010-026). Статус дилера «Палфингер Кран Рус».</div>
+            </div>
+
+            <div class="timeline-item highlight">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2011–2012</div>
+              <div class="timeline-text">Получен статус аттестованного Сервисного Центра «КАМАЗ» и официального дилерского центра ПАО «КАМАЗ» (3S). Лучший дилер 2012 г. по гарантийным обязательствам и работе с корпоративными клиентами.</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2019–2021</div>
+              <div class="timeline-text">Лучший партнёр «Кран Центр КАМАЗ» в СЗФО (2019). Лучший дилер по реализации в лизинг (2020–2021). Дистрибьютор KAMAZ G-Profi.</div>
+            </div>
+
+            <div class="timeline-item highlight">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2020</div>
+              <div class="timeline-text">Получен статус официального дилерского центра ПАО «КАМАЗ» на право обслуживания автомобилей магистрального семейства К5.</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2022</div>
+              <div class="timeline-text">Получен статус официального сервисного центра КОМПАС. Расширение линейки партнёрских статусов.</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Current statuses -->
+        <div>
+          <span class="section-label">Актуальные статусы</span>
+          <h2 style="margin-top:8px;margin-bottom:24px">Компания сегодня</h2>
+          <div class="status-list">
+            <div class="status-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Дилер ПАО «КАМАЗ» на территории г. Санкт-Петербурга
+            </div>
+            <div class="status-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Аттестованный Сервисный Центр «КАМАЗ» (статус 3S)
+            </div>
+            <div class="status-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Официальный дилерский центр ПАО «КАМАЗ» по обслуживанию автомобилей семейства К5
+            </div>
+            <div class="status-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Официальный дилер ООО «КРАН центр «КАМАЗ»
+            </div>
+            <div class="status-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Официальный дистрибьютор ООО «ИМЗ АВТОКРАН»
+            </div>
+            <div class="status-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Официальный дистрибьютор смазочных материалов KAMAZ G-Profi на территории РФ
+            </div>
+            <div class="status-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Сервисный партнёр по обслуживанию газовых двигателей Weichai Power
+            </div>
+            <div class="status-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Официальный партнёр по реализации рессорной продукции Чусовская рессора Springer (ОМК)
+            </div>
+            <div class="status-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Дилер ОАО «НЕФАЗ» и ЗАО «Строймаш»
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages -->
+  <section class="section section-alt" aria-labelledby="why-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Наши преимущества</span>
+        <h2 id="why-title">Почему выбирают АК Гранат</h2>
+      </div>
+      <div class="advantages-grid">
+        <div class="advantage-card fade-up">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>30+ лет опыта</h4>
+          <p>Первый дистрибьютор КАМАЗ в Санкт-Петербурге. Глубокая экспертиза в грузовой технике и спецтехнике на шасси КАМАЗ.</p>
+        </div>
+        <div class="advantage-card fade-up">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h4>Два дилерских центра</h4>
+          <p>Два аттестованных дилерских центра в Санкт-Петербурге. Собственный сервис, склад запчастей, шоурум техники.</p>
+        </div>
+        <div class="advantage-card fade-up">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+          <h4>Лизинг и кредит</h4>
+          <p>Работаем с КАМАЗ-ЛИЗИНГ, Альфа-Лизинг и ведущими банками. Субсидии, льготные ставки, оформление за 1 день.</p>
+        </div>
+        <div class="advantage-card fade-up">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Официальная гарантия</h4>
+          <p>Гарантийное и постгарантийное обслуживание. Оригинальные запчасти на складе в СПб. Минимальный простой техники.</p>
+        </div>
+        <div class="advantage-card fade-up">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+          </div>
+          <h4>ИТИС и телематика</h4>
+          <p>Подключение и обслуживание системы ИТИС КАМАЗ. Удалённый мониторинг парка, диагностика в реальном времени.</p>
+        </div>
+        <div class="advantage-card fade-up">
+          <div class="advantage-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h4>Корпоративным клиентам</h4>
+          <p>Индивидуальные условия для парков от 3 единиц. Персональный менеджер, выездная диагностика, приоритетный сервис.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requisites -->
+  <section class="section" id="rekvizity" aria-labelledby="req-title">
+    <div class="container">
+      <div class="section-header" style="text-align:left">
+        <span class="section-label">Юридическая информация</span>
+        <h2 id="req-title" style="margin-top:8px;margin-bottom:0">Реквизиты компании</h2>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:32px" class="resp-grid-1">
+
+        <div class="form-card" style="padding:24px 28px">
+          <h3 style="font-size:1rem;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--clr-border)">Общие сведения</h3>
+          <table class="req-table">
+            <tr><td>Полное наименование</td><td>ООО «Автомобильная компания «Гранат»</td></tr>
+            <tr><td>Сокращённое наименование</td><td>ООО «АК «Гранат»</td></tr>
+            <tr><td>ИНН</td><td>7820312828</td></tr>
+            <tr><td>КПП</td><td>782001001</td></tr>
+            <tr><td>Юридический адрес</td><td>196624, г. Санкт-Петербург, пос. Шушары, ул. Ленина, 2</td></tr>
+            <tr><td>Фактический адрес</td><td>196626, г. Санкт-Петербург, пос. Шушары, ул. Ленина, 2</td></tr>
+          </table>
+        </div>
+
+        <div class="form-card" style="padding:24px 28px">
+          <h3 style="font-size:1rem;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--clr-border)">Контактные данные</h3>
+          <table class="req-table">
+            <tr><td>Телефон (продажи К5)</td><td><a href="tel:+78123345010" style="color:var(--clr-burgundy)">+7 (812) 334-50-10</a></td></tr>
+            <tr><td>Телефон (общий)</td><td><a href="tel:+78123277119" style="color:var(--clr-burgundy)">+7 (812) 327-71-19</a></td></tr>
+            <tr><td>Email (КАМАЗ К5)</td><td><a href="mailto:kamaz@granat.spb.ru" style="color:var(--clr-burgundy)">kamaz@granat.spb.ru</a></td></tr>
+            <tr><td>Email (общий)</td><td><a href="mailto:info@granat.spb.ru" style="color:var(--clr-burgundy)">info@granat.spb.ru</a></td></tr>
+            <tr><td>Сайт</td><td><a href="https://kamaz-k5.ru" style="color:var(--clr-burgundy)">kamaz-k5.ru</a></td></tr>
+            <tr><td>Режим работы</td><td>Пн–Пт: 09:00–18:00</td></tr>
+          </table>
+        </div>
+
+      </div>
+
+      <p style="font-size:.78rem;color:var(--clr-muted);margin-top:20px">
+        Информация, размещённая на сайте, носит информационный характер и не является публичной офертой согласно статье 437 ГК РФ.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner" aria-label="Призыв к действию">
+    <div class="container">
+      <div>
+        <h2>Станьте нашим клиентом</h2>
+        <p>Более 30 лет мы помогаем бизнесу в Санкт-Петербурге и СЗФО решать транспортные задачи с техникой КАМАЗ.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="catalog.html" class="btn btn-secondary">Смотреть каталог</a>
+        <a href="contacts.html" class="btn" style="background:rgba(255,255,255,.15);color:#fff;border:2px solid rgba(255,255,255,.4)">Связаться с нами</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
